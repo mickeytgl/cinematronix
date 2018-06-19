@@ -1,4 +1,5 @@
 Rails.application.configure do
+  config.webpacker[:dev_server_host] = 'http://localhost:8080'
   # Verifies that versions and hashed value of the package contents in the project's package.json
   config.webpacker.check_yarn_integrity = true
   # Settings specified here will take precedence over those in config/application.rb.
